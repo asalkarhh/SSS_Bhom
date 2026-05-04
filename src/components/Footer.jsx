@@ -54,8 +54,8 @@ function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© 2024 ShriSSSSanstha. All Rights Reserved.</span>
-          <span>Made with love for a Better Tomorrow</span>
+          <span>© 2025 ShriSSSSanstha. All Rights Reserved.</span>
+          <span>Developed by <a href="https://www.asalkar.in" target="_blank">Asalkar Techworks</a></span>
           <span>80G Registered | NGO Certified</span>
         </div>
       </div>
