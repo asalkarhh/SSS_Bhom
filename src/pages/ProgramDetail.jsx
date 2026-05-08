@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { FaArrowLeft, FaCheckCircle, FaHeart, FaRegImages, FaRupeeSign } from 'react-icons/fa';
 import { getProgramBySlug, programDetails } from '../data/programs';
 import { programIconMap } from '../utils/icons';
+import { openRazorpayPayment } from '../utils/payment';
 
 /**
  * Detailed service page for each ShriSSSSanstha program with specific donation options.
@@ -44,6 +45,7 @@ function ProgramDetail() {
 
   const submitDonation = (event) => {
     event.preventDefault();
+    openRazorpayPayment();
     setSubmitted(true);
   };
 

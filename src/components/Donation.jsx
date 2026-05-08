@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaAward, FaCheckCircle, FaHeart, FaLock, FaQrcode, FaRupeeSign } from 'react-icons/fa';
+import { openRazorpayPayment } from '../utils/payment';
 
 const amounts = [100, 500, 1000, 2000, 5000];
 const impacts = [
@@ -23,6 +24,7 @@ function Donation() {
 
   const submitDonation = (event) => {
     event.preventDefault();
+    openRazorpayPayment();
   };
 
   return (
